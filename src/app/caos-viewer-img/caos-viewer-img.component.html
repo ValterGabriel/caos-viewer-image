@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<div>
+    <div>
+        <a class="button material-symbols-outlined" (click)="zoomIn()">zoom_in</a>
+        <a class="button material-symbols-outlined" (click)="zoomOut()">zoom_out</a>
+        <a class="button material-symbols-outlined" (click)="fullScreen()">open_in_full</a>
+        <a class="button material-symbols-outlined" (click)="onMouseLeave()">filter_center_focus</a>
+        
+    </div>
+    <div class="container" #imageContainer>
+        <img #image alt="Angular Logo" [src]="safeImage" (click)="onImagemClicada($event)" 
+        (mousemove)="onMouseMove($event)"
+        [ngClass]="{'imagem-em-tela-cheia': imagemEmTelaCheia}"
+        class="zoom imagem">
+    </div>
+</div>

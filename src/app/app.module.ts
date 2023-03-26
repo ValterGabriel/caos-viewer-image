@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CaosViewerImgComponent } from './caos-viewer-img/caos-viewer-img.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CaosViewerImgComponent
   ],
   imports: [
     BrowserModule,
